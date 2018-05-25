@@ -16,11 +16,12 @@
   <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="normalize.css">
   <title>Project 1</title>
+  <base href="file:///home/naykan/Desktop/Projects/personal/project_1/">
 </head>
 <body>
 
   <div class="upper-header">
-    <div class="wrap">
+    <div class="header-wrap">
       <p>
         <i class="far fa-envelope"></i>
         Info@domain.com
@@ -42,16 +43,34 @@
     <h1>Nalpure</h1>
     <form action="index.html" method="get">
         <input type="text" name="search" value=""
-         placeholder="Input text here">
-      <button><i class="fas fa-search"></i></button>
+         placeholder="Input text here"><button><i class="fas fa-search"></i></button>
     </form>
   </section>
 
   <nav class="bottom-header">
     <ul>
-      <li><a href="">Home</a></li>
-      <li><a href="">Pages</a></li>
-      <li><a href="">Dropdown</a></li>
+      <li><a href="" id="current-page">Home</a></li>
+      <li><a href=""><i class="fas fa-sort-down"></i>Pages</a>
+        <ul class="dropdown">
+      <li><a href="#">Sub-1</a></li>
+      <li><a href="#">Sub-2</a></li>
+      <li><a href="#">Sub-3</a></li>
+      <li><a href="#">Sub-3</a></li>
+
+      <li><a href="#">Sub-3</a></li>
+
+      <li><a href="#">Sub-3</a></li>
+
+      <li><a href="#">Sub-3</a></li>
+
+    </ul>
+</li>
+      <li><a href=""><i class="fas fa-sort-down"></i>Dropdown</a><ul class="dropdown">
+        <li><a href="">level2</a></li>
+        <li><a href=""><i class="fas fa-sort-down"></i>level2 + Drop</a></li>
+        <li><a href="">level2</a></li>
+
+      </ul></li>
       <li><a href="">Link text</a></li>
       <li><a href="">Link text 2</a></li>
       <li><a href="">Link text 3</a></li>

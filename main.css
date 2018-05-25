@@ -20,6 +20,18 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
 }
 
+/*
+  ================================
+  HEADER
+  ================================
+*/
+
+.upper-header,
+.middle-header,
+.bottom-header {
+  text-transform: uppercase;
+}
+
 
 /*
   ================================
@@ -30,17 +42,20 @@ h1, h2, h3, h4, h5, h6 {
 .upper-header {
   text-align: center;
   background-color: orange;
-  padding: 5px;
+  padding: 2px 0px;
 }
 
 .upper-header * {
   display: inline-block;
   color: white;
-  text-transform: uppercase;
   font-size: 15px;
 }
 
-.upper-header .wrap > *, .upper-header .wrap li {
+.header-wrap {
+  margin-left: 30px;
+}
+
+.upper-header .header-wrap > *, .upper-header .header-wrap li {
     margin-right: 16px;
 }
 
@@ -53,10 +68,6 @@ h1, h2, h3, h4, h5, h6 {
 .upper-header ul {
   padding: 0;
 }
-
-
-
-
 
 /*
   ================================
@@ -86,6 +97,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
   position: relative;
   bottom: 10px;
+  font-size: 1.7em;
 }
 
 .middle-header form {
@@ -95,7 +107,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .middle-header, .bottom-header {
-  color: #4C5250;
+  color: rgba(44, 62, 80, .7);
+}
+
+.middle-header form input {
+  width: 150px;
+  padding: 6px;
+  border: 1px solid rgba(189, 195, 199,1.0);
+}
+.middle-header form button {
+  padding: 7px 10px;
+  background: orange;
+  border: none;
+  color: white;
 }
 
 
@@ -108,29 +132,103 @@ h1, h2, h3, h4, h5, h6 {
   ================================
 */
 
+.bottom-header ul {
+  list-style: none;
+}
+#current-page {
+  color: orange;
+}
+
 .bottom-header {
   width: 960px;
   margin: 25px auto;
 }
 
 .bottom-header a {
-  color: #4C5250;
+  color: rgba(44, 62, 80, .7);
   text-decoration: none;
 }
+.bottom-header a:hover {
+  transition: color 0.5s;
+  color: orange;
+}
 
-.bottom-header ul li {
+.bottom-header a:active {
+  color: orange;
+}
+
+.bottom-header>ul>li {
   display: inline-block;
   padding: 25px 15px;
-  text-transform: uppercase;
-
+  position: relative;
 }
 
-.bottom-header ul {
+.bottom-header>ul {
+  position: relative;
   padding: 0;
   text-align: center;
-  border-top: 1px solid #4C5250;
-  border-bottom: 1px solid #4C5250;
+  border-top: 1px solid rgba(189, 195, 199,1.0);
+  border-bottom: 1px solid rgba(189, 195, 199,1.0);
 }
+
+.bottom-header i {
+  padding-right: 5px;
+}
+
+
+
+
+.dropdown {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  display: none;
+  z-index: 4;
+  left: 0;
+  background-color: rgba(0,0,0, 0.3);
+  min-width: 200px;
+  padding-left: 0;
+}
+
+.dropdown a {
+  color: white;
+}
+
+.dropdown li:hover {
+  background: orange;
+
+}
+
+.dropdown li:hover a {
+  color: white;
+}
+
+.dropdown li {
+  float: left;
+  display: block;
+  width: 100%;
+  clear: both;
+  min-height: 2em;
+  padding-top: 10px;
+}
+
+.bottom-header>ul li:hover .dropdown {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*
   ================================
@@ -138,7 +236,7 @@ h1, h2, h3, h4, h5, h6 {
   ================================
 */
 .hero {
-  background: url("assets/sky.jpg");
+  background: center / cover no-repeat url("assets/sky.jpg");
   width: 100%;
   height: 700px;
   position: relative;
