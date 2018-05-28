@@ -267,12 +267,11 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 25px;
 }
 
-.hero>section>button {
+.button-default {
   border: none;
   background-color: orange;
   color: white;
   padding: 15px;
-
 }
 
 .hero>section>button:hover {
@@ -312,6 +311,8 @@ h1, h2, h3, h4, h5, h6 {
 .content>div>header {
   text-align: center;
   padding: 60px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .content>div>header h3, .content>div>header h4{
@@ -379,7 +380,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 33%;
   text-align: center;
   margin-bottom: 50px;
-  color: #4C5250;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .features-boxes a {
@@ -387,17 +388,40 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
 }
 
+.features-boxes h5 {
+  font-size: 1em;
+  color: black;
+}
+
+.features-boxes p {
+  font-family: "Roboto", san-serif;
+}
+
 .features-boxes i {
   font-size: 3em;
+  transition: color .0s ease-in;
+
 }
 
 .features button {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  margin-top: 120px;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
+.features-boxes header:hover,
+.features-boxes header:hover h5,
+.features-boxes header:hover a,
+.features-boxes header:hover ~ a  {
+  color: orange;
+  transition: color 0.5s ease-in;
+}
+
+.features-boxes header:hover i {
+  transition: color 0.5s ease-in 1s;
+}
 
 
 
