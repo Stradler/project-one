@@ -175,9 +175,6 @@ h1, h2, h3, h4, h5, h6 {
   padding-right: 5px;
 }
 
-
-
-
 .dropdown {
   visibility: hidden;
   opacity: 0;
@@ -295,7 +292,7 @@ h1, h2, h3, h4, h5, h6 {
 */
 
 .content {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .content:nth-child(2n){
@@ -400,7 +397,6 @@ h1, h2, h3, h4, h5, h6 {
 .features-boxes i {
   font-size: 3em;
   transition: color .0s ease-in;
-
 }
 
 .features button {
@@ -453,22 +449,59 @@ blockquote {
 }
 
 blockquote > p {
+  color: rgba(0, 0, 0, 0.5);
   background: white;
+  width: 800px;
+  margin: 0 auto;
+  font-size: 1.3em;
+  font-family: "Roboto", sans-serif;
+  padding: 30px;
+  position: relative;
+}
+
+blockquote > p::after {
+  position: absolute;
+  top: 100%;
+  left: 48.3%;
+  content: "";
+  border-width: 15px;
+  border-style: solid;
+  border-color: white transparent transparent transparent;
+  z-index: 4;
 }
 
 blockquote div img {
-  width: 100px;
-  max-height: 100px;
+  width: 50px;
+  max-height: 50px;
+  margin-top: 20px;
 }
 
 blockquote div p {
   font-style: normal;
 }
 
+blockquote>div p:first-of-type {
+  font-weight: 900;
+  margin-bottom: 0;
+}
+
+blockquote>div p:last-of-type {
+  color: rgba(0, 0, 0, 0.5);
+  font-style: italic;
+  margin-top: 0;
+}
+
+
+
 .citations button {
   width: 300px;
   margin: 0 auto;
   display: block;
+  margin-top: 75px;
+}
+
+.citations {
+  padding-bottom: 75px;
 }
 
 
