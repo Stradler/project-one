@@ -705,7 +705,7 @@ footer > div > div > p:last-child {
   float: right;
 }
 
- ul {
+ .page-footer ul {
   list-style: none;
   padding-left: 0;
 }
