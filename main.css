@@ -114,6 +114,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 150px;
   padding: 6px;
   border: 1px solid rgba(189, 195, 199,1.0);
+  border-right: none;
 }
 .middle-header form button {
   padding: 7px 10px;
@@ -269,6 +270,8 @@ h1, h2, h3, h4, h5, h6 {
   background-color: orange;
   color: white;
   padding: 15px;
+  margin: 0 auto;
+  display: block;
 }
 
 .hero>section>button:hover {
@@ -372,6 +375,10 @@ h1, h2, h3, h4, h5, h6 {
   ================================
 */
 
+.features {
+  padding-bottom: 80px;
+}
+
 .features-boxes > * {
   display: inline-block;
   width: 33%;
@@ -400,11 +407,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .features button {
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
   margin-top: 60px;
-  margin-bottom: 60px;
 }
 
 .features-boxes header:hover,
@@ -516,44 +519,103 @@ blockquote>div p:last-of-type {
 */
 .article-cards > article {
   display: inline-block;
-  width: 45%;
-
+  width: 48%;
 }
 
-.article-cards > article h5, .article-cards > article p {
-  text-align: center;
-}
 
-.article-cards > article > a img {
-  width: 100%;
-  height: 300px;
-}
-
-.article-cards + button {
-  display: block;
-  margin: 0 auto;
-}
-
-.article-footer {
-  width: 100%;
-}
-
-.article-footer ul li {
-  display: inline-block;
-}
-
-.article-footer ul li:last-child {
-  float: right;
-}
-
+/* Test normal layour without float */
 .article-cards article:first-child {
   float: left;
 }
 
-
 .article-cards article:last-child {
   float: right;
 }
+
+.article-cards > article h5, .article-cards > article p {
+  text-align: left;
+  padding-left: 40px;
+  margin: 0;
+  padding-top: 25px;
+}
+
+.article-cards > article p {
+  font-size: 0.9em;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.article-cards > article > a {
+  display: block;
+}
+
+.article-cards > article > a img {
+  width: 100%;
+  height: 450px;
+}
+
+
+.article-card-body {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-top: none;
+  position: relative;
+  bottom: 5px;
+}
+
+.article-card-body h5 {
+  font-family: "Noto Serif", serif;
+  font-size: 1.3em;
+}
+
+.article-card-body p {
+  font-family: "Roboto", sans-serif;
+}
+
+.article-footer {
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.article-footer ul li {
+  display: inline-block;
+  font-size: 0.9em;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.admin-link {
+  border-right: 1px solid rgba(0, 0, 0, 0.5);
+  padding-right: 7px
+
+}
+
+.article-footer ul li a {
+  color: orange;
+  text-decoration: none;
+  padding-left: 7px;
+  font-size: 0.8em;
+}
+
+.article-footer ul li:nth-child(2){
+   margin-left: 7px;
+}
+
+.article-footer ul li:last-child {
+  float: right;
+  padding-right: 20px;
+  font-size: 1.3em;
+}
+
+.article-cards-section .button-default {
+  margin-top: 60px;
+}
+
+.article-cards-section {
+  padding-bottom: 40px;
+}
+
+
+
 
 /*
   ================================
@@ -561,19 +623,27 @@ blockquote>div p:last-of-type {
   ================================
 */
 
+.content:last-of-type{
+  background-color: orange;
+  padding: 50px;
+}
+
 .invintation > h3 {
   float: left;
   margin: 0;
-
+  color: white;
+  font-family: "Noto Serif", serif;
+  margin-top: 15px;
 }
 
 .invintation button {
   float:  right;
-  margin-top: 5px;
+  border: none;
+  background-color: black;
+  color: white;
+  padding: 20px;
 }
-.content:last-of-type{
-  background-color: white;
-}
+
 
 
 /*
