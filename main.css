@@ -626,6 +626,7 @@ blockquote>div p:last-of-type {
 .content:last-of-type{
   background-color: orange;
   padding: 50px;
+  margin-bottom: 0;
 }
 
 .invintation > h3 {
@@ -652,9 +653,36 @@ blockquote>div p:last-of-type {
   ================================
 */
 
-footer {
+.page-footer {
+  background-color: #121212;
+  padding-top: 40px;
+}
+
+.page-footer > section {
+  color: white;
   width: 960px;
   margin: 0 auto;
+}
+
+.page-footer > div {
+  background-color: white;
+  color: black;
+}
+
+.page-footer > div > div {
+  width: 960px;
+  margin: 0 auto;
+  color: rgba(0, 0, 0, 0.6);
+  padding: 15px;
+}
+
+.page-footer a {
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+}
+
+.page-footer section a {
+  color: orange;
 }
 
 footer > section > div {
@@ -664,29 +692,20 @@ footer > section > div {
   padding: 1%;
 }
 
-footer > div > * {
+footer > section > div > h3 {
+  font-size: 1em;
+  margin-bottom: 60px;
+}
+
+footer > div > div > * {
   display: inline-block;
 }
 
-footer > div > p:last-child {
+footer > div > div > p:last-child {
   float: right;
 }
 
-.footer-address, .footer-address ul {
+ ul {
   list-style: none;
-}
-
-.footer-address>li:nth-child(-n+3){
-  padding-left: 20px;
-}
-.footer-address>li:nth-child(1){
-  background: url(https://use.fontawesome.com/releases/v5.0.13/svgs/solid/map-marker-alt.svg) no-repeat;
-}
-
-.footer-address>li:nth-child(2){
-  background: url(https://use.fontawesome.com/releases/v5.0.13/svgs/solid/phone.svg) no-repeat;
-}
-
-.footer-address>li:nth-child(3){
-  background: url(https://use.fontawesome.com/releases/v5.0.13/svgs/regular/envelope.svg) no-repeat;
+  padding-left: 0;
 }
