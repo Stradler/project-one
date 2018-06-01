@@ -20,6 +20,19 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
 }
 
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 3454;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  cursor: pointer;
+}
+
 /*
   ================================
   HEADER
@@ -272,11 +285,13 @@ h1, h2, h3, h4, h5, h6 {
   padding: 15px;
   margin: 0 auto;
   display: block;
+  cursor: pointer;
+  outline: none;
 }
 
-.hero>section>button:hover {
+.button-default:hover {
   transition: background 0.5s,
-              color 1s;
+  color 1s;
   background-color: rgba(0, 0, 0, 0);
   color: black;
   border: 1px solid black;
@@ -643,6 +658,8 @@ blockquote>div p:last-of-type {
   background-color: black;
   color: white;
   padding: 20px;
+  cursor: pointer;
+  outline: none;
 }
 
 
@@ -708,4 +725,63 @@ footer > div > div > p:last-child {
  .page-footer ul {
   list-style: none;
   padding-left: 0;
+}
+
+.footer-address>li {
+  margin-bottom: 40px;
+  font-family: "Roboto", sans-serif;
+}
+
+.footer-address>li>i{
+  width: 15%;
+  vertical-align: top;
+}
+
+.footer-address>li>span{
+  width: 85%;
+  display: inline-block;
+}
+
+.footer-address>li ul li {
+  float: left;
+  background-color: white;
+  width: 40px;
+  min-height: 40px;
+  margin-right: 2px;
+  text-align: center;
+}
+
+.footer-address>li ul li:hover {
+  background-color: steelblue;
+  transition: background-color 0.5s;
+}
+
+.footer-address>li ul li a {
+  color: rgba(0,0,0, 0.5);  
+  display: block;
+  margin-top: 13px;
+}
+
+.footer-links li {
+  margin-bottom: 40px;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9em;
+}
+
+.email-form p {
+  font-family: "Robo", sans-serif;
+}
+
+.email-form input {
+  margin-bottom: 20px;
+  padding: 5px;
+  width: 100%;
+}
+
+.email-form .button-default {
+  margin: 0;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  h
 }
