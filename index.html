@@ -20,6 +20,13 @@
 </head>
 <body>
 
+
+  <button id="myBtn">
+    top
+  </button>
+
+
+
   <div class="upper-header">
     <div class="header-wrap">
       <p>
@@ -293,10 +300,10 @@
     <section class="clear">
       <div>
         <h3>Nulla Tincidunt Eget</h3>
-        <ul class="footer-address">
-          <li ><i class="fas fa-map-marker"></i>Street Name & Number, Town, Postcode/Zip</li>
-          <li> <i class="fas fa-phone"></i>+00 (123) 456 7890</li>
-          <li><i class="fas fa-envelope"></i>info@domain.com</li>
+        <ul class="footer-address clear">
+          <li><i class="fas fa-map-marker"></i><span>Street Name & Number, Town, Postcode/Zip</span></li>
+          <li><i class="fas fa-phone"></i><span>+00 (123) 456 7890</span></li>
+          <li><i class="fas fa-envelope"></i><span>info@domain.com</span></li>
           <li>
             <ul>
               <li class=""><a href=""><i class="fab fa-facebook-f"></i></a></li>
@@ -309,7 +316,7 @@
       </div>
       <div>
         <h3>Elit Eros Imperdiet</h3>
-        <ul>
+        <ul class="footer-links">
           <li><a href="">Aenean venenatis leo</a></li>
           <li><a href="">In nunc elementum sed</a></li>
           <li><a href="">Commodo nibh congue</a></li>
@@ -335,14 +342,14 @@
       </div>
       <div>
         <h3>Consectetur Orci Cras</h3>
-        <form action="index.html" method="post">
+        <form class="email-form" action="index.html" method="post">
           <p>
             Congue eget dolor ac tristique non sapien vulputate ornare enim eu egestas ipsum.
           </p>
-          <input type="text">
-          <input type="email">
+          <input type="text" placeholder="Name">
+          <input type="email" placeholder="Email">
+          <button class="button-default">Submit</button>          
         </form>
-        <button>Submit</button>
       </div>
     </section>
 
@@ -353,5 +360,37 @@
       </div>
     </div>
   </footer>
+
+
+  <script>
+    const topBtn = document.getElementById("myBtn");
+    topBtn.addEventListener("click", topFunction);
+    window.onscroll = function(){
+      scrollFunction();
+    }
+
+    function scrollFunction(){
+      if(document.body.scrollTop > 60 || document.documentElement.scrollTop > 60){
+        document.getElementById("myBtn").style.display = "block";
+      } else {
+        document.getElementById("myBtn").style.display = "none";
+      }
+    }
+
+    function topFunction(){
+      window.scroll({
+      top: 0, 
+      left: 0, 
+      behavior: 'smooth' 
+      });
+
+    }
+
+    // Scroll to specific values
+// scrollTo is the same
+
+
+
+  </script>
 </body>
 </html>
