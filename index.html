@@ -1,396 +1,443 @@
+<!-- style-guide ref link: https://cssguidelin.es/#html -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet"
-  href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
-  integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
-  crossorigin="anonymous">
-  <!-- serif for headers -->
-  <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
-  <!-- sans-serif for text and nav -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,900&amp;subset=cyrillic" rel="stylesheet">
 
-  <link rel="stylesheet" href="main.css">
-  <link rel="stylesheet" href="normalize.css">
-  <title>Project 1</title>
-  <!-- <base href="file:///home/naykan/Desktop/Projects/personal/project_1/"> -->
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+          integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+          crossorigin="anonymous">
+    <!-- Serif for headers -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif" 
+          rel="stylesheet">
+    <!-- Sans-serif for text and nav -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,900&amp;subset=cyrillic"
+          rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+    <!-- Custom Styles-->
+    <link rel="stylesheet" href="main.css">
+    <title>Project 1</title>
+  </head>
+
+  <body>
+
+    <button id="js-scroll-top-button" class="button--scroll">Top</button>
 
 
-  <button id="myBtn">
-    top
-  </button>
 
 
 
-  <div class="upper-header">
-    <div class="header-wrap">
-      <p>
-        <i class="far fa-envelope"></i>
-        Info@domain.com
-      </p>
-      <ul>
-        <li><a href=""><i class="fas fa-home"></i></a></li>
-        <li><a href=""><i class="fas fa-question-circle"></i></a></li>
-        <li><a href=""><i class="fas fa-sign-in-alt"></i></a></li>
-        <li><a href=""><i class="fas fa-edit"></i></a></li>
-      </ul>
+    <div class="upper-header">
+
+      <div class="header-wrap">
+
+        <p><i class="far  fa-envelope"></i>Info@domain.com</p>
+
+        <ul>
+          <li><a href=""><i class="fas  fa-home"></i></a></li>
+          <li><a href=""><i class="fas  fa-question-circle"></i></a></li>
+          <li><a href=""><i class="fas  fa-sign-in-alt"></i></a></li>
+          <li><a href=""><i class="fas  fa-edit"></i></a></li>
+        </ul>
+        
+      </div>
+
     </div>
-  </div>
 
-  <section class="middle-header clear">
-    <address class="">
-      <i class="fas fa-phone"></i>
-      +00 (123) 456 7890
-    </address>
-    <h1>Nalpure</h1>
-    <form action="index.html" method="get">
-        <input type="text" name="search" value=""
-         placeholder="Input text here"><button><i class="fas fa-search"></i></button>
-    </form>
-  </section>
 
-  <nav class="bottom-header">
-    <ul>
-      <li><a href="" id="current-page">Home</a></li>
-      <li><a href=""><i class="fas fa-sort-down"></i>Pages</a>
-        <ul class="dropdown">
-      <li><a href="#">Sub-1</a></li>
-      <li><a href="#">Sub-2</a></li>
-      <li><a href="#">Sub-3</a></li>
-      <li><a href="#">Sub-3</a></li>
 
-      <li><a href="#">Sub-3</a></li>
 
-      <li><a href="#">Sub-3</a></li>
 
-      <li><a href="#">Sub-3</a></li>
+    <section class="middle-header  clear">
 
-    </ul>
-</li>
-      <li><a href=""><i class="fas fa-sort-down"></i>Dropdown</a><ul class="dropdown">
-        <li><a href="">level2</a></li>
-        <li><a href=""><i class="fas fa-sort-down"></i>level2 + Drop</a></li>
-        <li><a href="">level2</a></li>
+      <address class=""><i class="fas fa-phone"></i>+00 (123) 456 7890</address>
 
-      </ul></li>
-      <li><a href="">Link text</a></li>
-      <li><a href="">Link text 2</a></li>
-      <li><a href="">Link text 3</a></li>
-      <li><a href="">Login Link text </a></li>
-    </ul>
-  </nav>
+      <h1>Nalpure</h1>
 
-  <div class="hero">
+      <form action="index.html" method="get">
+
+        <input type="text" 
+               name="search" value=""
+               placeholder="Input text here"><!--
+                 remove extraspace, to-do: try adding float to make markup more leet
+     --><button><i class="fas fa-search"></i></button>
+
+      </form>
+
+    </section>
+
+
+
+
+
+    <nav class="bottom-header">
+
+      <ul>
+        <li><a href="" id="current-page">Home</a></li>
+
+        <li>
+
+          <a href=""><i class="fas fa-sort-down"></i>Pages</a>
+
+          <ul class="dropdown">
+            <li><a href="#">Sub-1</a></li>
+            <li><a href="#">Sub-2</a></li>
+            <li><a href="#">Sub-3</a></li>
+            <li><a href="#">Sub-3</a></li>
+            <li><a href="#">Sub-3</a></li>
+            <li><a href="#">Sub-3</a></li>
+            <li><a href="#">Sub-3</a></li>
+          </ul>
+
+        </li>
+
+        <li>
+
+          <a href=""><i class="fas fa-sort-down"></i>Dropdown</a>
+
+          <ul class="dropdown">
+            <li><a href="">level2</a></li>
+            <li><a href=""><i class="fas fa-sort-down"></i>level2 + Drop</a></li>
+            <li><a href="">level2</a></li>
+          </ul>
+
+        </li>
+
+        <li><a href="">Link text</a></li>
+        <li><a href="">Link text 2</a></li>
+        <li><a href="">Link text 3</a></li>
+        <li><a href="">Login Link text </a></li>
+      </ul>
+      
+    </nav>
+
+
+
+
+
+    <div class="hero">
+
       <section>
+
         <h2>Vestibulum Vehicula Egestas</h2>
         <p>Rhoncus a odio fusce eu lorem vehicula euismod mauris eget sodales mi duis habitant morbi tristique senectus et netus et malesuada fames.</p>
         <button class="button-default">TURPIS EGESTAS</button>
+
       </section>
-  </div>
+
+    </div>
 
 
-  <section class="content intro">
-    <div>
-      <header>
-        <h3>Donec Tortor Eget Mauris Sagittis</h3>
-        <h4>Convallis morbi eget leo elit praesent at libero et arcu</h4>
-      </header>
 
-      <div class="intro-row clear">
-          <img src="assets/intro.jpg" alt="Intro"><div class="intro-blocks"><div>
+
+
+    <section class="content  intro">
+
+      <div>
+
+        <header>
+          <h3>Donec Tortor Eget Mauris Sagittis</h3>
+          <h4>Convallis morbi eget leo elit praesent at libero et arcu</h4>
+        </header>
+
+        <div class="intro-row clear">
+          <img src="assets/intro.jpg" alt="Intro"><!--  
+                extraspace
+       --><div class="intro-blocks"><!-- extraspace 
+         --><div>
               <h5><a href="">Pretium Commodo</a></h5>
               <p>Nec ipsum integer in tincidunt ligula ut nec magna ac nisl facilisis ultricies nam sed aliquet nisl aliquam…</p>
-            </div><div>
+            </div><!-- extraspace 
+         --><div>
               <h5><a href="">Commodo Rhoncus</a></h5>
               <p>Sapien vitae euismod urna condimentum eu sed sodales leo eget urna fermentum fermentum vivamus auctor…</p>
-            </div><div>
+            </div><!-- extraspace 
+         --><div>
               <h5><a href="">Amet Orci Facilisis</a></h5>
               <p>Aliquet phasellus rhoncus imperdiet metus id malesuada curabitur pharetra eu turpis non bibendum suspendisse…</p>
-            </div><div>
+            </div><!-- extraspace 
+         --><div>
               <h5><a href="">Aliquam Facilisis</a></h5>
               <p>Iaculis justo in dignissim suspendisse potenti integer eu enim sed felis faucibus ultricies vivamus tellus justo…</p>
             </div>
           </div>
+
+        </div>
+        
       </div>
-    </div>
-  </section>
+
+    </section>
 
 
-  <section class="content features">
-    <div>
-      <header>
+<!-- continue refactoring here-->
+
+
+    <section class="content  features">
+      <div>
+        <header>
         <h3>Donec Tortor Eget Mauris Sagittis</h3>
         <h4>Convallis morbi eget leo elit praesent at libero et arcu</h4>
-      </header>
+        </header>
 
-      <div class="features-boxes">
-        <article>
+        <div class="features-boxes">
+          <article>
           <header>
-            <a href="">
-              <i class="fab fa-500px"></i>
-              <h5>Imperdiet Arcu Sodales</h5>
-            </a>
+          <a href="">
+          <i class="fab fa-500px"></i>
+          <h5>Imperdiet Arcu Sodales</h5>
+          </a>
           </header>
           <p>Curabitur finibus ligula in eleifend semper est enim viverra tellus quis pretium…</p>
           <a href="">View Details »</a>
-        </article>
-
-        <article>
+          </article>
+          <article>
           <header>
-            <a href="">
-              <i class="fas fa-hands-helping"></i>
-              <h5>Massa Dui Eget Turpis</h5>
-            </a>
+          <a href="">
+          <i class="fas fa-hands-helping"></i>
+          <h5>Massa Dui Eget Turpis</h5>
+          </a>
           </header>
           <p>Maecenas a nunc rhoncus imperdiet quam vitae vulputate quam curabitur auctor…</p>
           <a href="">View Details »</a>
-        </article>
-
-        <article>
+          </article>
+          <article>
           <header>
-            <a href="">
-              <i class="fas fa-bug"></i>
-              <h5>Imperdiet Lorem Congue</h5>
-            </a>
+          <a href="">
+          <i class="fas fa-bug"></i>
+          <h5>Imperdiet Lorem Congue</h5>
+          </a>
           </header>
           <p>Metus tempor viverra class aptent taciti sociosqu ad litora torquent per conubia…</p>
           <a href="">View Details »</a>
-        </article>
-
-        <article>
+          </article>
+          <article>
           <header>
-            <a href="">
-              <i class="fas fa-circle"></i>
-              <h5>Nostra Inceptos Himenaeos</h5>
-            </a>
+          <a href="">
+          <i class="fas fa-circle"></i>
+          <h5>Nostra Inceptos Himenaeos</h5>
+          </a>
           </header>
           <p>Maecenas dapibus mauris finibus pharetra a cras mi ut pharetra faucibus commodo…</p>
           <a href="">View Details »</a>
-        </article>
-
-        <article>
+          </article>
+          <article>
           <header>
-            <a href="">
-              <i class="fas fa-graduation-cap"></i>
-              <h5>Donec Placerat Tincidunt</h5>
-            </a>
+          <a href="">
+          <i class="fas fa-graduation-cap"></i>
+          <h5>Donec Placerat Tincidunt</h5>
+          </a>
           </header>
           <p>Volutpat phasellus et imperdiet augue vivamus finibus dolor molestie consequat…</p>
           <a href="">View Details »</a>
-        </article>
-
-        <article>
+          </article>
+          <article>
           <header>
-            <a href="">
-              <i class="fas fa-camera-retro"></i>
-              <h5>Ipsum Ligula Tristique</h5>
-            </a>
+          <a href="">
+          <i class="fas fa-camera-retro"></i>
+          <h5>Ipsum Ligula Tristique</h5>
+          </a>
           </header>
           <p>Tellus in egestas odio velit feugiat neque phasellus non pulvinar quam fringilla…</p>
           <a href="">View Details »</a>
-        </article>
-
-      </div>
-      <button class="button-default">VESTIBULUM MOLESTIE</button>
-    </div>
-  </section>
-
-
-  <section class="content">
-    <div>
-      <header>
-        <h3>Purus Vehicula Pulvinar</h3>
-        <h4>Imperdiet vel duis aliquet urna vel urna molestie sit amet</h4>
-      </header>
-
-      <div class="gallery-images clear">
-        <a href=""><img src="assets/redhead.jpg" alt="whatever"></a>
-        <a href=""><img src="assets/redhead.jpg" alt="whatever"></a>
-        <a href=""><img src="assets/redhead.jpg" alt="whatever"></a>
-        <a href=""><img src="assets/redhead.jpg" alt="whatever"></a>
-        <a href=""><img src="assets/redhead.jpg" alt="whatever"></a>
-        <a href=""><img src="assets/redhead.jpg" alt="whatever"></a>
-      </div>
-    </div>
-  </section>
-
-
-  <section class="content citations">
-    <div>
-      <header>
-        <h3>Purus Vehicula Pulvinar</h3>
-        <h4>Imperdiet vel duis aliquet urna vel urna molestie sit amet</h4>
-      </header>
-
-      <blockquote cite="http://someoneelse">
-        <p>Id neque nec ornare donec varius turpis vel ante accumsan lacinia aenean aliquet orci lacinia lorem auctor faucibus vel vel ligula aliquam elit ligula rutrum vitae dui at ultricies facilisis ex</p>
-        <div>
-          <img src="assets/man.jpg" alt="whatever">
-          <p>John Doe</p>
-          <p>Chairman</p>
+          </article>
         </div>
-
-      </blockquote>
-
-      <button class="button-default">VIEW MORE TESTIMONIALS »</button>
-    </div>
-  </section>
-
-
-  <section class="content article-cards-section">
-    <div>
-      <header>
-        <h3>Morbi Vitae Vestibulum</h3>
-        <h4>Et orci a nunc ullamcorper lobortis sit amet vel mi etiam</h4>
-      </header>
-
-      <div class="article-cards clear">
-
-        <article>
-          <a href=""><img src="assets/man.jpg" alt="fdsf"></a>
-          <div class="article-card-body">
-            <h5>Arcu Leo Volutpat A Libero</h5>
-            <p>Nec sodales tincidunt elit sed in vestibulum justo cras sed ipsum quis justo pulvinar hendrerit non nec orci in a quam…</p>
-            <footer class="article-footer">
-              <ul>
-                <li><i class="fas fa-user-alt"></i><a href="">Admin</a></li>
-                <li><i class="fas fa-tag"></i><a href="">Tag Name</a></li>
-                <li><a href="">Read More</a></li>
-              </ul>
-            </footer>
-          </div>
-        </article><article>
-          <a href=""><img src="assets/man.jpg" alt="fsadfa"></a>
-          <div class="article-card-body">
-            <h5>Varius Blandit Purus</h5>
-            <p>Sed ultrices velit etiam eleifend nulla vestibulum dapibus ex nec luctus est donec lectus lacus varius vitae ut viverra…</p>
-            <footer class="article-footer clear">
-              <ul>
-                <li><i class="fas fa-user-alt"></i><a href="">Admin</a></li>
-                <li><i class="fas fa-tag"></i><a href="">Tag Name</a></li>
-                <li><a href="">Read More</a></li>
-              </ul>
-            </footer>
-          </div>
-
-        </article>
-
-      </div>
-      <button class="button-default">VIEW MORE POSTS »</button>
-    </div>
-
-  </section>
-
-
-  <section class="content clear">
-    <div class="invintation">
-      <h3>Nec Eros Maecenas Sed Ligula Enim Proin Fermentum</h3>
-      <button>VIVERRA VEHICULA »</button>
-    </div>
-  </section>
-
-
-  <footer class="page-footer">
-
-    <section class="clear">
-      <div>
-        <h3>Nulla Tincidunt Eget</h3>
-        <ul class="footer-address clear">
-          <li><i class="fas fa-map-marker"></i><span>Street Name & Number, Town, Postcode/Zip</span></li>
-          <li><i class="fas fa-phone"></i><span>+00 (123) 456 7890</span></li>
-          <li><i class="fas fa-envelope"></i><span>info@domain.com</span></li>
-          <li>
-            <ul>
-              <li class=""><a href=""><i class="fab fa-facebook-f"></i></a></li>
-              <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-              <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-              <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-            </ul>
-        </li>
-        </ul>
-      </div>
-      <div>
-        <h3>Elit Eros Imperdiet</h3>
-        <ul class="footer-links">
-          <li><a href="">Aenean venenatis leo</a></li>
-          <li><a href="">In nunc elementum sed</a></li>
-          <li><a href="">Commodo nibh congue</a></li>
-          <li><a href="">Donec porttitor nec</a></li>
-          <li><a href="">Ex id egestas in feugiat</a></li>
-        </ul>
-      </div>
-      <div>
-        <h3>Placerat Enim Nulla</h3>
-
-        <article>
-          <h4><a href="">Mollis Sed Dui Tempus</a></h4>
-          <time datetime="2045-04-06">Friday, 6th April 2045</time>
-          <p>Fusce sodales hendrerit neque dictum porttitor curabitur…</p>
-        </article>
-
-        <article>
-          <h4><a href="">Ultrices Posuere Justo</a></h4>
-          <time datetime="2045-04-05">Thursday, 5th April 2045</time>
-          <p>Id tincidunt tellus consequat volutpat ut finibus libero…</p>
-        </article>
-
-      </div>
-      <div>
-        <h3>Consectetur Orci Cras</h3>
-        <form class="email-form" action="index.html" method="post">
-          <p>
-            Congue eget dolor ac tristique non sapien vulputate ornare enim eu egestas ipsum.
-          </p>
-          <input type="text" placeholder="Name">
-          <input type="email" placeholder="Email">
-          <button class="button-default">Submit</button>          
-        </form>
+      <button class="button-default">VESTIBULUM MOLESTIE</button>
       </div>
     </section>
 
-    <div>
+
+
+
+
+    <section class="content">
       <div>
-        <p>Copyright &copy; - All Rights Reserved - <a href="">Domain Name</a></p>
-        <p>Inspired by <a href="http://www.os-templates.com/free-website-templates/nalpure">Nalpure</a></p>
+        <header>
+        <h3>Purus Vehicula Pulvinar</h3>
+        <h4>Imperdiet vel duis aliquet urna vel urna molestie sit amet</h4>
+        </header>
+        <div class="gallery-images clear">
+          <a href=""><img src="assets/redhead.jpg" alt="whatever"></a>
+          <a href=""><img src="assets/redhead.jpg" alt="whatever"></a>
+          <a href=""><img src="assets/redhead.jpg" alt="whatever"></a>
+          <a href=""><img src="assets/redhead.jpg" alt="whatever"></a>
+          <a href=""><img src="assets/redhead.jpg" alt="whatever"></a>
+          <a href=""><img src="assets/redhead.jpg" alt="whatever"></a>
+        </div>
       </div>
-    </div>
-  </footer>
+    </section>
 
 
-  <script>
-    const topBtn = document.getElementById("myBtn");
-    topBtn.addEventListener("click", topFunction);
-    window.onscroll = function(){
-      scrollFunction();
-    }
 
-    function scrollFunction(){
-      if(document.body.scrollTop > 60 || document.documentElement.scrollTop > 60){
-        document.getElementById("myBtn").style.display = "block";
-      } else {
-        document.getElementById("myBtn").style.display = "none";
+
+
+    <section class="content  citations">
+      <div>
+        <header>
+          <h3>Purus Vehicula Pulvinar</h3>
+          <h4>Imperdiet vel duis aliquet urna vel urna molestie sit amet</h4>
+        </header>
+        <blockquote cite="http://someoneelse">
+          <p>Id neque nec ornare donec varius turpis vel ante accumsan lacinia aenean aliquet orci lacinia lorem auctor faucibus vel vel ligula aliquam elit ligula rutrum vitae dui at ultricies facilisis ex</p>
+          <div>
+            <img src="assets/man.jpg" alt="whatever">
+            <p>John Doe</p>
+            <p>Chairman</p>
+          </div>
+        </blockquote>
+        <button class="button-default">VIEW MORE TESTIMONIALS »</button>
+      </div>
+    </section>
+
+
+
+
+
+    <section class="content  article-cards-section">
+      <div>
+        <header>
+        <h3>Morbi Vitae Vestibulum</h3>
+        <h4>Et orci a nunc ullamcorper lobortis sit amet vel mi etiam</h4>
+        </header>
+        <div class="article-cards clear">
+          <article>
+          <a href=""><img src="assets/man.jpg" alt="fdsf"></a>
+          <div class="article-card-body">
+          <h5>Arcu Leo Volutpat A Libero</h5>
+          <p>Nec sodales tincidunt elit sed in vestibulum justo cras sed ipsum quis justo pulvinar hendrerit non nec orci in a quam…</p>
+          <footer class="article-footer">
+          <ul>
+          <li><i class="fas fa-user-alt"></i><a href="">Admin</a></li>
+          <li><i class="fas fa-tag"></i><a href="">Tag Name</a></li>
+          <li><a href="">Read More</a></li>
+          </ul>
+          </footer>
+          </div>
+          </article><article>
+            <a href=""><img src="assets/man.jpg" alt="fsadfa"></a>
+            <div class="article-card-body">
+            <h5>Varius Blandit Purus</h5>
+            <p>Sed ultrices velit etiam eleifend nulla vestibulum dapibus ex nec luctus est donec lectus lacus varius vitae ut viverra…</p>
+            <footer class="article-footer clear">
+            <ul>
+            <li><i class="fas fa-user-alt"></i><a href="">Admin</a></li>
+            <li><i class="fas fa-tag"></i><a href="">Tag Name</a></li>
+            <li><a href="">Read More</a></li>
+            </ul>
+            </footer>
+            </div>
+          </article>
+
+        </div>
+      <button class="button-default">VIEW MORE POSTS »</button>
+      </div>
+
+    </section>
+
+
+
+
+
+    <section class="content  clear">
+      <div class="invintation">
+        <h3>Nec Eros Maecenas Sed Ligula Enim Proin Fermentum</h3>
+        <button>VIVERRA VEHICULA »</button>
+      </div>
+    </section>
+
+
+
+
+
+    <footer class="page-footer">
+
+      <section class="clear">
+        <div>
+          <h3>Nulla Tincidunt Eget</h3>
+          <ul class="footer-address clear">
+            <li><i class="fas fa-map-marker"></i><span>Street Name & Number, Town, Postcode/Zip</span></li>
+            <li><i class="fas fa-phone"></i><span>+00 (123) 456 7890</span></li>
+            <li><i class="fas fa-envelope"></i><span>info@domain.com</span></li>
+            <li>
+              <ul>
+                <li class=""><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3>Elit Eros Imperdiet</h3>
+          <ul class="footer-links">
+            <li><a href="">Aenean venenatis leo</a></li>
+            <li><a href="">In nunc elementum sed</a></li>
+            <li><a href="">Commodo nibh congue</a></li>
+            <li><a href="">Donec porttitor nec</a></li>
+            <li><a href="">Ex id egestas in feugiat</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Placerat Enim Nulla</h3>
+          <article>
+            <h4><a href="">Mollis Sed Dui Tempus</a></h4>
+            <time datetime="2045-04-06">Friday, 6th April 2045</time>
+            <p>Fusce sodales hendrerit neque dictum porttitor curabitur…</p>
+          </article>
+          <article>
+            <h4><a href="">Ultrices Posuere Justo</a></h4>
+            <time datetime="2045-04-05">Thursday, 5th April 2045</time>
+            <p>Id tincidunt tellus consequat volutpat ut finibus libero…</p>
+          </article>
+        </div>
+        <div>
+          <h3>Consectetur Orci Cras</h3>
+          <form class="email-form" action="index.html" method="post">
+            <p>Congue eget dolor ac tristique non sapien vulputate ornare enim eu egestas ipsum.</p>
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email">
+            <button class="button-default">Submit</button>          
+          </form>
+        </div>
+      </section>
+      <div>
+        <div>
+          <p>Copyright &copy; - All Rights Reserved - <a href="">Domain Name</a></p>
+          <p>Inspired by <a href="http://www.os-templates.com/free-website-templates/nalpure">Nalpure</a></p>
+        </div>
+      </div>
+    </footer>
+
+
+
+
+
+    <script>
+      const topBtn = document.getElementById("js-scroll-top-button");
+      topBtn.addEventListener("click", topFunction);
+      window.onscroll = function(){
+       scrollFunction();
       }
-    }
 
-    function topFunction(){
-      window.scroll({
-      top: 0, 
-      left: 0, 
-      behavior: 'smooth' 
-      });
+      function scrollFunction(){
+        if(document.body.scrollTop > 60 || document.documentElement.scrollTop > 60){
+          document.getElementById("js-scroll-top-button").style.display = "block";
+        } else {
+          document.getElementById("js-scroll-top-button").style.display = "none";
+        }
+      }
 
-    }
+      function topFunction(){
+        window.scroll({
+        top: 0, 
+        left: 0, 
+        behavior: 'smooth' 
+        });
+      }
+    </script>
+  </body>
 
-    // Scroll to specific values
-// scrollTo is the same
-
-
-
-  </script>
-</body>
 </html>
