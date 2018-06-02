@@ -1,5 +1,7 @@
+<!-- style-guide ref link: https://cssguidelin.es/#html -->
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,50 +10,78 @@
           href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
           integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
           crossorigin="anonymous">
-    <!-- serif for headers -->
+    <!-- Serif for headers -->
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif" 
           rel="stylesheet">
-    <!-- sans-serif for text and nav -->
+    <!-- Sans-serif for text and nav -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,900&amp;subset=cyrillic"
           rel="stylesheet">
-
-    <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="normalize.css">
+    <!-- Custom Styles-->
+    <link rel="stylesheet" href="main.css">
     <title>Project 1</title>
-    <!-- <base href="file:///home/naykan/Desktop/Projects/personal/project_1/"> -->
   </head>
+
   <body>
-    <button id="myBtn">Top</button>
+
+    <button id="js-scroll-top-button" class="button--scroll">Top</button>
+
+
+
+
+
     <div class="upper-header">
+
       <div class="header-wrap">
-        <p>
-        <i class="far fa-envelope"></i>Info@domain.com</p>
+
+        <p><i class="far  fa-envelope"></i>Info@domain.com</p>
+
         <ul>
-          <li><a href=""><i class="fas fa-home"></i></a></li>
-          <li><a href=""><i class="fas fa-question-circle"></i></a></li>
-          <li><a href=""><i class="fas fa-sign-in-alt"></i></a></li>
-          <li><a href=""><i class="fas fa-edit"></i></a></li>
+          <li><a href=""><i class="fas  fa-home"></i></a></li>
+          <li><a href=""><i class="fas  fa-question-circle"></i></a></li>
+          <li><a href=""><i class="fas  fa-sign-in-alt"></i></a></li>
+          <li><a href=""><i class="fas  fa-edit"></i></a></li>
         </ul>
+        
       </div>
+
     </div>
-    <section class="middle-header clear">
-      <address class="">
-      <i class="fas fa-phone"></i>
-      +00 (123) 456 7890
-      </address>
+
+
+
+
+
+    <section class="middle-header  clear">
+
+      <address class=""><i class="fas fa-phone"></i>+00 (123) 456 7890</address>
+
       <h1>Nalpure</h1>
+
       <form action="index.html" method="get">
+
         <input type="text" 
                name="search" value=""
                placeholder="Input text here"><!--
-                 remove extraspace
+                 remove extraspace, to-do: try adding float to make markup more leet
      --><button><i class="fas fa-search"></i></button>
+
       </form>
+
     </section>
+
+
+
+
+
     <nav class="bottom-header">
+
       <ul>
         <li><a href="" id="current-page">Home</a></li>
-        <li><a href=""><i class="fas fa-sort-down"></i>Pages</a>
+
+        <li>
+
+          <a href=""><i class="fas fa-sort-down"></i>Pages</a>
+
           <ul class="dropdown">
             <li><a href="#">Sub-1</a></li>
             <li><a href="#">Sub-2</a></li>
@@ -61,52 +91,91 @@
             <li><a href="#">Sub-3</a></li>
             <li><a href="#">Sub-3</a></li>
           </ul>
+
         </li>
-        <li><a href=""><i class="fas fa-sort-down"></i>Dropdown</a>
+
+        <li>
+
+          <a href=""><i class="fas fa-sort-down"></i>Dropdown</a>
+
           <ul class="dropdown">
             <li><a href="">level2</a></li>
             <li><a href=""><i class="fas fa-sort-down"></i>level2 + Drop</a></li>
             <li><a href="">level2</a></li>
           </ul>
+
         </li>
+
         <li><a href="">Link text</a></li>
         <li><a href="">Link text 2</a></li>
         <li><a href="">Link text 3</a></li>
         <li><a href="">Login Link text </a></li>
       </ul>
+      
     </nav>
+
+
+
+
+
     <div class="hero">
+
       <section>
+
         <h2>Vestibulum Vehicula Egestas</h2>
         <p>Rhoncus a odio fusce eu lorem vehicula euismod mauris eget sodales mi duis habitant morbi tristique senectus et netus et malesuada fames.</p>
         <button class="button-default">TURPIS EGESTAS</button>
+
       </section>
+
     </div>
-    <section class="content intro">
+
+
+
+
+
+    <section class="content  intro">
+
       <div>
+
         <header>
-        <h3>Donec Tortor Eget Mauris Sagittis</h3>
-        <h4>Convallis morbi eget leo elit praesent at libero et arcu</h4>
+          <h3>Donec Tortor Eget Mauris Sagittis</h3>
+          <h4>Convallis morbi eget leo elit praesent at libero et arcu</h4>
         </header>
+
         <div class="intro-row clear">
-          <img src="assets/intro.jpg" alt="Intro"><div class="intro-blocks"><div>
-          <h5><a href="">Pretium Commodo</a></h5>
-          <p>Nec ipsum integer in tincidunt ligula ut nec magna ac nisl facilisis ultricies nam sed aliquet nisl aliquam…</p>
-          </div><div>
-          <h5><a href="">Commodo Rhoncus</a></h5>
-          <p>Sapien vitae euismod urna condimentum eu sed sodales leo eget urna fermentum fermentum vivamus auctor…</p>
-          </div><div>
-          <h5><a href="">Amet Orci Facilisis</a></h5>
-          <p>Aliquet phasellus rhoncus imperdiet metus id malesuada curabitur pharetra eu turpis non bibendum suspendisse…</p>
-          </div><div>
-          <h5><a href="">Aliquam Facilisis</a></h5>
-          <p>Iaculis justo in dignissim suspendisse potenti integer eu enim sed felis faucibus ultricies vivamus tellus justo…</p>
+          <img src="assets/intro.jpg" alt="Intro"><!--  
+                extraspace
+       --><div class="intro-blocks"><!-- extraspace 
+         --><div>
+              <h5><a href="">Pretium Commodo</a></h5>
+              <p>Nec ipsum integer in tincidunt ligula ut nec magna ac nisl facilisis ultricies nam sed aliquet nisl aliquam…</p>
+            </div><!-- extraspace 
+         --><div>
+              <h5><a href="">Commodo Rhoncus</a></h5>
+              <p>Sapien vitae euismod urna condimentum eu sed sodales leo eget urna fermentum fermentum vivamus auctor…</p>
+            </div><!-- extraspace 
+         --><div>
+              <h5><a href="">Amet Orci Facilisis</a></h5>
+              <p>Aliquet phasellus rhoncus imperdiet metus id malesuada curabitur pharetra eu turpis non bibendum suspendisse…</p>
+            </div><!-- extraspace 
+         --><div>
+              <h5><a href="">Aliquam Facilisis</a></h5>
+              <p>Iaculis justo in dignissim suspendisse potenti integer eu enim sed felis faucibus ultricies vivamus tellus justo…</p>
+            </div>
           </div>
-          </div>
+
         </div>
+        
       </div>
+
     </section>
-    <section class="content features">
+
+
+<!-- continue refactoring here-->
+
+
+    <section class="content  features">
       <div>
         <header>
         <h3>Donec Tortor Eget Mauris Sagittis</h3>
@@ -178,6 +247,11 @@
       <button class="button-default">VESTIBULUM MOLESTIE</button>
       </div>
     </section>
+
+
+
+
+
     <section class="content">
       <div>
         <header>
@@ -194,7 +268,12 @@
         </div>
       </div>
     </section>
-    <section class="content citations">
+
+
+
+
+
+    <section class="content  citations">
       <div>
         <header>
           <h3>Purus Vehicula Pulvinar</h3>
@@ -211,7 +290,12 @@
         <button class="button-default">VIEW MORE TESTIMONIALS »</button>
       </div>
     </section>
-    <section class="content article-cards-section">
+
+
+
+
+
+    <section class="content  article-cards-section">
       <div>
         <header>
         <h3>Morbi Vitae Vestibulum</h3>
@@ -253,12 +337,18 @@
     </section>
 
 
-    <section class="content clear">
+
+
+
+    <section class="content  clear">
       <div class="invintation">
         <h3>Nec Eros Maecenas Sed Ligula Enim Proin Fermentum</h3>
         <button>VIVERRA VEHICULA »</button>
       </div>
     </section>
+
+
+
 
 
     <footer class="page-footer">
@@ -320,8 +410,13 @@
         </div>
       </div>
     </footer>
+
+
+
+
+
     <script>
-      const topBtn = document.getElementById("myBtn");
+      const topBtn = document.getElementById("js-scroll-top-button");
       topBtn.addEventListener("click", topFunction);
       window.onscroll = function(){
        scrollFunction();
@@ -329,9 +424,9 @@
 
       function scrollFunction(){
         if(document.body.scrollTop > 60 || document.documentElement.scrollTop > 60){
-          document.getElementById("myBtn").style.display = "block";
+          document.getElementById("js-scroll-top-button").style.display = "block";
         } else {
-          document.getElementById("myBtn").style.display = "none";
+          document.getElementById("js-scroll-top-button").style.display = "none";
         }
       }
 
@@ -344,4 +439,5 @@
       }
     </script>
   </body>
+
 </html>
