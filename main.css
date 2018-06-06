@@ -1,19 +1,58 @@
+/**
+ * CONTENTS
+ * 
+ * SETTINGS
+ * Utility - sane box-sizing, clear-fix, etc.
+ *
+ * COMPONENTS
+ *
+ * HEADER - general header styling 
+ * Upper-Header
+ * Page-Header
+ * Main-Navigation
+ *
+ * HERO
+ * 
+ * CONTENT - general styling for content boxes
+ * Content-Introduction
+ * Content-Features
+ * Content-Gallery
+ * Content-Citations
+ * Content-Article-Cards
+ * Content-Invintation
+ *
+ * FOOTER - general footer styling
+ * Top Footer - 
+ * Bottom Footer - 
+ */
+
+
+
+
+
+
+/*--------------------------------*\
+  #UTILITY
+\*--------------------------------*/
+
 *,
 *:before,
 *:after {
   box-sizing: border-box;
 }
 
-/*
-  ================================
-  UTILITY
-  ================================
-*/
+
 .clear::after {
   content: " ";
   display: table;
   clear: both;
 }
+
+
+.ml-2 {
+  margin-left: 2em;
+}
+
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Noto serif", serif;
@@ -34,9 +73,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*
-  ================================
+  --------------------------------
   HEADER
-  ================================
+  --------------------------------
 */
 
 .upper-header,
@@ -47,9 +86,9 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /*
-  ================================
+  --------------------------------
   UPPER-HEADER
-  ================================
+  --------------------------------
 */
 
 .upper-header {
@@ -64,28 +103,26 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 15px;
 }
 
-.header-wrap {
-  margin-left: 30px;
-}
-
-.upper-header .header-wrap > *, .upper-header .header-wrap li {
-    margin-right: 16px;
-}
-
-.upper-header p {
+.upper-header__address {
   font-family: "Roboto", sans-serif;
   font-weight: 900;
   letter-spacing: 1.2px;
+  margin-right: 16px;
+  margin-left: 30px;
 }
 
-.upper-header ul {
+.upper-header__icon-list {
   padding: 0;
 }
 
+.upper-header__icon-list li {
+  margin-right: 16px;
+}
+
 /*
-  ================================
+  --------------------------------
   MIDDLE-HEADER
-  ================================
+  --------------------------------
 */
 
 .middle-header {
@@ -141,9 +178,9 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /*
-  ================================
+  --------------------------------
   BOTTOM-HEADER
-  ================================
+  --------------------------------
 */
 
 .bottom-header ul {
@@ -234,9 +271,9 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /*
-  ================================
+  --------------------------------
   HERO
-  ================================
+  --------------------------------
 */
 .hero {
   background: center / cover no-repeat url("assets/sky.jpg");
@@ -296,9 +333,9 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /*
-  =================================
+  --------------------------------=
   GENERAL SECTIONS STYLINGS
-  =================================
+  --------------------------------=
 */
 
 .content {
@@ -332,9 +369,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*
-  ================================
+  --------------------------------
   INTRO TO CONTENT
-  ================================
+  --------------------------------
 */
 
 
@@ -377,9 +414,9 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /*
-  ================================
+  --------------------------------
   FEATURES
-  ================================
+  --------------------------------
 */
 
 .features {
@@ -432,9 +469,9 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /*
-  ================================
+  --------------------------------
   GALLERY IMAGES
-  ================================
+  --------------------------------
 */
 
 .gallery-imgaes {
@@ -450,9 +487,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*
-  ================================
+  --------------------------------
   CITATIONS
-  ================================
+  --------------------------------
 */
 blockquote {
   text-align: center;
@@ -520,9 +557,9 @@ blockquote>div p:last-of-type {
 
 
 /*
-  ================================
+  --------------------------------
   ARTICLE-CARDS
-  ================================
+  --------------------------------
 */
 .article-cards > article {
   display: inline-block;
@@ -625,9 +662,9 @@ blockquote>div p:last-of-type {
 
 
 /*
-  ================================
+  --------------------------------
   INVINTATION
-  ================================
+  --------------------------------
 */
 
 .content:last-of-type{
@@ -657,9 +694,9 @@ blockquote>div p:last-of-type {
 
 
 /*
-  ================================
+  --------------------------------
   FOOTER
-  ================================
+  --------------------------------
 */
 
 .page-footer {
